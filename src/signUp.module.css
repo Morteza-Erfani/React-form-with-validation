@@ -109,6 +109,12 @@ input[type="checkbox"]:focus {
   outline: none;
 }
 
+.checkBoxContainer span {
+  width: min-content;
+  flex-wrap: wrap;
+  height: auto;
+}
+
 .formButtons {
   display: flex;
   justify-content: space-between;

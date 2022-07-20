@@ -28,7 +28,7 @@ const SignUp = () => {
 
   useEffect(() => {
     setErrors(validate(data));
-  }, [data]);
+  }, [data, focus]);
 
   const changeHandler = (event) => {
     if (event.target.name === "isAccepted") {
@@ -129,6 +129,7 @@ const SignUp = () => {
               onChange={changeHandler}
               onFocus={focusHandler}
             />
+            {errors.isAccepted && focus.isAccepted && <span>{errors.isAccepted}</span>}
           </div>
         </div>
         <div className={styles.formButtons}>
